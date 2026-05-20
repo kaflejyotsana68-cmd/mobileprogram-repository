@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Calculator</h2>
+
+    <input type="number" id="num1" placeholder="First Number">
+
+    <input type="number" id="num2" placeholder="Second Number">
+
+    <br><br>
+
+    <button onclick="calculate('add')">Addition</button>
+
+    <button onclick="calculate('sub')">Subtraction</button>
+
+    <button onclick="calculate('mul')">Multiplication</button>
+
+    <button onclick="calculate('div')">Division</button>
+
+    <h3 id="result">Result:</h3>
+
+    <!-- Link JavaScript File -->
+    <script src="result.js"></script>
+
+</body>
+</html>
+
