@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank System</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Simple Bank System</h1>
+
+    <h2 id="balance"></h2>
+
+    <input type="number" id="amount" placeholder="Enter Amount">
+
+    <br>
+
+    <button onclick="withdraw()">Withdraw</button>
+
+    <button onclick="deposit()">Deposit</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
