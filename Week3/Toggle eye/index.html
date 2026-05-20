@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bank System</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Font Awesome for Eye Icon -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        .balance-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        i {
+            cursor: pointer;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Simple Bank System</h1>
+
+    <div class="balance-box">
+
+        <h2 id="balance"></h2>
+
+        <!-- Eye Icon -->
+        <i class="fa-solid fa-eye" id="eyeIcon"></i>
+
+    </div>
+
+    <input type="number" id="amount" placeholder="Enter Amount">
+
+    <br>
+
+    <button onclick="withdraw()">Withdraw</button>
+
+    <button onclick="deposit()">Deposit</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
