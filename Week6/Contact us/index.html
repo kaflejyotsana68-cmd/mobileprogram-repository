@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Firebase CRUD Contact Form</title>
+  </head>
+  <body>
+    <h2>Contact Form</h2>
+
+    <input type="text" id="contactId" placeholder="Contact ID" /><br /><br />
+
+    <input type="text" id="name" placeholder="Name" /><br /><br />
+
+    <input type="email" id="email" placeholder="Email" /><br /><br />
+
+    <input type="text" id="phone" placeholder="Phone" /><br /><br />
+
+    <input type="text" id="address" placeholder="Address" /><br /><br />
+
+    <input type="text" id="city" placeholder="City" /><br /><br />
+
+    <input type="text" id="country" placeholder="Country" /><br /><br />
+
+    <input type="text" id="subject" placeholder="Subject" /><br /><br />
+
+    <textarea id="message" placeholder="Message"></textarea><br /><br />
+
+    <input type="date" id="date" /><br /><br />
+
+    <button onclick="addContact()">Add</button>
+
+    <button onclick="readContact()">Read</button>
+
+    <button onclick="updateContact()">Update</button>
+
+    <button onclick="deleteContact()">Delete</button>
+
+    <br /><br />
+
+    <p id="result"></p>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

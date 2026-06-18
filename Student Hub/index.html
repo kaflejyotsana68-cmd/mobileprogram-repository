@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Hub Pro Max</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      if ("Notification" in window) {
+        Notification.requestPermission();
+      }
+    </script>
+  </head>
+  <body>
+    <!-- LOGIN -->
+    <div id="loginPage" class="page active">
+      <div class="box">
+        <h1>🎓 Student Hub</h1>
+
+        <input id="email" placeholder="Email" />
+        <input id="password" type="password" placeholder="Password" />
+
+        <button onclick="login()">Login</button>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboardPage" class="page">
+      <h1>🏠 Dashboard</h1>
+
+      <div class="grid">
+        <button onclick="show('classesPage')">📚 Classes</button>
+        <button onclick="show('assignmentsPage')">📝 Assignments</button>
+        <button onclick="show('tasksPage')">⏰ Tasks</button>
+        <button onclick="show('timetablePage')">📅 Timetable</button>
+      </div>
+
+      <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- CLASSES -->
+    <div id="classesPage" class="page">
+      <button onclick="back()">⬅ Back</button>
+      <h2>📚 Classes</h2>
+
+      <input id="classInput" placeholder="Add class" />
+      <button onclick="addClass()">Add</button>
+
+      <div id="classList"></div>
+    </div>
+
+    <!-- ASSIGNMENTS -->
+    <div id="assignmentsPage" class="page">
+      <button onclick="back()">⬅ Back</button>
+      <h2>📝 Assignments</h2>
+
+      <input id="assignmentInput" placeholder="Add assignment" />
+      <button onclick="addAssignment()">Add</button>
+
+      <div id="assignmentList"></div>
+    </div>
+
+    <!-- TASKS -->
+    <div id="tasksPage" class="page">
+      <button onclick="back()">⬅ Back</button>
+      <h2>⏰ Tasks (Smart Alerts)</h2>
+
+      <input id="taskInput" placeholder="Task name" />
+
+      <input id="startTime" type="time" />
+      <input id="endTime" type="time" />
+
+      <button onclick="addTask()">Add Task</button>
+
+      <div id="taskList"></div>
+    </div>
+
+    <!-- TIMETABLE -->
+    <div id="timetablePage" class="page">
+      <button onclick="back()">⬅ Back</button>
+      <h2>📅 Timetable</h2>
+
+      <input id="timeInput" placeholder="e.g. 9AM - Math" />
+      <button onclick="addTime()">Add</button>
+
+      <div id="timeList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
